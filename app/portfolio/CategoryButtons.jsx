@@ -15,7 +15,7 @@ const CategoryButtons = ({categories, onFilterProjects}) => {
     return (
         <div className={styles.categories}>
             {
-                categories.map(category => <button key={category} className={`btn ${styles.catBtn} ${activeCategory == category ? "primary" : ""}`} onClick={() => changeCategoryHandler(category)}>{category}</button>)
+                categories.map(category => <button key={category} className={`btn ${styles.ctaBtn} ${activeCategory == category ? "primary" : ""}`} onClick={() => changeCategoryHandler(category)}>{category}</button>)
             }
         </div>
     )
