@@ -7,7 +7,7 @@ import {data} from './data'
 import CategoryButtons from './CategoryButtons'
 import Projects from './Projects'
 
-const page = () => {
+const Page = () => {
     const [projects, setProjects] = useState(data)
     const categories = data.map(item => item.category);
     const uniqueCategories = ["All", ...new Set(categories)]
@@ -33,4 +33,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
